@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/main_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Pengelolaan Data">
+        <menu>
+            <group
+                android:id="@+id/pengelolaan_data"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_data_spareparts"
+                    android:icon="@drawable/ic_database"
+                    android:title="Spareparts" />
+                <item
+                    android:id="@+id/nav_data_supplier"
+                    android:icon="@drawable/ic_database"
+                    android:title="Supplier" />
+                <item
+                    android:id="@+id/nav_data_pengadaan_barang"
+                    android:icon="@drawable/ic_database"
+                    android:title="Pengadaan Barang" />
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/account_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>
